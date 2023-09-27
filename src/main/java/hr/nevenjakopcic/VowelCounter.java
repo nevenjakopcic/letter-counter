@@ -7,10 +7,17 @@ import java.io.FileNotFoundException;
 
 public class VowelCounter {
     public static void main(String[] args) {
+
+        if (args.length == 0) {
+            System.out.println("Filename argument not provided.");
+            return;
+        }
+
+        String filename = args[0];
         LetterCount result;
 
         try {
-            result = LetterCounter.count("D:/Desktop/dummy.xml");
+            result = LetterCounter.count(filename);
 
             System.out.println(result);
         } catch (FileNotFoundException | IllegalArgumentException e) {
