@@ -35,6 +35,7 @@ public final class LetterCounter {
      * will be counted. However, if the file provided is of .xml format, only vowels in
      * the file's elements and attributes will be counted, while vowels in their names will not be.
      * Conversely, all consonants in the file will be counted.</p>
+     * <p>This method counts both upper and lower case letters.</p>
      * @param filename A {@link String} representation of the name or path of the file
      * @return A {@link LetterCount} object representing the counted vowels and consonants
      * @throws FileNotFoundException Raised if the specified file is not found
