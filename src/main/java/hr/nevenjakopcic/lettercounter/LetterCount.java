@@ -1,5 +1,8 @@
 package hr.nevenjakopcic.lettercounter;
 
+/**
+ * Objects of this class store the count of vowels and consonants.
+ */
 public class LetterCount {
 
     private final int vowels;

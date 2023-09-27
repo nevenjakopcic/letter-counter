@@ -14,10 +14,9 @@ public class VowelCounter {
         }
 
         String filename = args[0];
-        LetterCount result;
 
         try {
-            result = LetterCounter.count(filename);
+            LetterCount result = LetterCounter.count(filename);
 
             System.out.println("Vowels: " + result.vowels());
         } catch (FileNotFoundException | IllegalArgumentException e) {
